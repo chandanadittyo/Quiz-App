@@ -1,7 +1,12 @@
+import "../Styles/App.css";
+import Layout from "./Layout";
+import Home from "./Pages/Home";
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 }
