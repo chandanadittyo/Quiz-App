@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import classes from "../../Styles/Video.module.css";
 import image from "../../images/3.jpg";
 const Video = () => {
   return (
-    <a href="quiz.html">
+    <NavLink to="/quiz">
       <div className={classes.video}>
         <img src={image} alt="" />
         <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
@@ -12,7 +13,7 @@ const Video = () => {
           <p>Score : Not taken yet</p>
         </div>
       </div>
-    </a>
+    </NavLink>
   );
 };
 

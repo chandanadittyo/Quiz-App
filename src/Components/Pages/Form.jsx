@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "../../Styles/SignupForm.module.css";
+import classes from "../../Styles/Form.module.css";
 
 // eslint-disable-next-line react/prop-types
-const SignupFrom = ({ children, className, ...rest }) => {
+const Form = ({ children, className, ...rest }) => {
   return (
     <form className={`${className} ${classes.form}`} action="#" {...rest}>
       {children}
@@ -10,4 +10,4 @@ const SignupFrom = ({ children, className, ...rest }) => {
   );
 };
 
-export default SignupFrom;
+export default Form;
